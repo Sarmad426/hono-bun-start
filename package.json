@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "practice": "bun run --hot src/practice",
-    "build": "bun build"
+    "build": "bun build src/index.ts --outdir=public"
   },
   "dependencies": {
     "hono": "^4.7.7"
