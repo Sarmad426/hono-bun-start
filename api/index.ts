@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import { handle } from 'hono/vercel'
-import { ENV_TYPE } from './type'
 import { env } from 'hono/adapter'
+import { ENV_TYPE } from './type'
 import { getUsers } from './db'
 
 const app = new Hono().basePath('/api')
