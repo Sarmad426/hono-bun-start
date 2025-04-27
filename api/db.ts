@@ -5,9 +5,6 @@ import { Pool } from 'pg';
 
 const DATABASE_URL = env.DATABASE_URL
 
-console.log("URL: ", DATABASE_URL)
-
-
 const pool = new Pool({
     connectionString: DATABASE_URL,
 });
