@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import { env } from 'hono/adapter'
 
-
+import { handle } from 'hono/vercel'
 
 const app = new Hono()
 
@@ -22,7 +22,5 @@ app.get('/user/:id', (c) => c.json({ name: env(c).USER_NAME, id: c.req.param('id
 
 
 
-export default {
-  fetch: app.fetch,
-  port: 8000,
-}
+export const GET = handle(app);
+export const POST = handle(app);
