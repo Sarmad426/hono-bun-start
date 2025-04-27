@@ -1,11 +1,24 @@
 import { Hono } from 'hono'
 import { handle } from 'hono/vercel'
+import { ENV_TYPE } from './type'
+import { env } from 'hono/adapter'
 
 const app = new Hono().basePath('/api')
 
 app.get('/', (c) => {
   return c.json({ message: "Hono API from Sarmad Rafique!" })
 })
+
+app.get('/user', (c) => {
+
+  const { USER_NAME, USER_EMAIL, USER_ID } = env<ENV_TYPE>(c)
+  return c.json({
+    "id": USER_ID,
+    "name": USER_NAME,
+    "email": USER_EMAIL,
+  })
+}
+)
 
 const handler = handle(app);
 
