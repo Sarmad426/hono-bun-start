@@ -2,7 +2,7 @@
   "name": "hono-bun-start",
   "type": "module",
   "scripts": {
-    "dev": "bun run --hot api/index.ts",
+    "dev": "bun run --hot api/basic-api.ts",
     "practice": "bun run --hot api/practice",
     "start": "vercel dev",
     "deploy": "vercel"
