@@ -1,5 +1,9 @@
 {
-  "buildCommand": "",
-  "installCommand": "bun install",
-  "outputDirectory": ""
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    }
+  ],
+  "redirects": [{ "source": "/", "destination": "/api", "permanent": false }]
 }
