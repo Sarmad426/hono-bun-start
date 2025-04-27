@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { handle } from 'hono/vercel'
 import { ENV_TYPE } from './type'
 import { env } from 'hono/adapter'
+import { getUsers } from './db'
 
 const app = new Hono().basePath('/api')
 
@@ -19,6 +20,16 @@ app.get('/user', (c) => {
   })
 }
 )
+
+app.get("/users", async (c) => {
+  const users = await getUsers();
+  console.log("Users: ", users)
+  return c.json({
+    "message": "Sarmad Practice API",
+    "users": users
+  })
+})
+
 
 const handler = handle(app);
 
