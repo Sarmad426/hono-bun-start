@@ -1,6 +1,5 @@
 {
   "buildCommand": "",
   "installCommand": "bun install",
-  "outputDirectory": "",
-  "framework": "other"
+  "outputDirectory": ""
 }
