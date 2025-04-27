@@ -1,8 +1,9 @@
 import { pgTable, uniqueIndex, index, varchar, boolean } from "drizzle-orm/pg-core"
+import { sql } from "drizzle-orm"
 
 
 
-export const user = pgTable("user", {
+export const userTable = pgTable("userTable", {
 	id: varchar().primaryKey().notNull(),
 	name: varchar().notNull(),
 	email: varchar().notNull(),
