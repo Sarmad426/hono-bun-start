@@ -4,6 +4,7 @@
     "": {
       "name": "hono-start",
       "dependencies": {
+        "dotenv": "^16.5.0",
         "drizzle-orm": "^0.43.1",
         "hono": "^4.7.7",
         "pg": "^8.15.6",
@@ -222,6 +223,8 @@
     "detect-libc": ["detect-libc@2.0.4", "", {}, "sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA=="],
 
     "diff": ["diff@4.0.2", "", {}, "sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A=="],
+
+    "dotenv": ["dotenv@16.5.0", "", {}, "sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg=="],
 
     "drizzle-kit": ["drizzle-kit@0.31.0", "", { "dependencies": { "@drizzle-team/brocli": "^0.10.2", "@esbuild-kit/esm-loader": "^2.5.5", "esbuild": "^0.25.2", "esbuild-register": "^3.5.0" }, "bin": { "drizzle-kit": "bin.cjs" } }, "sha512-pcKVT+GbfPA+bUovPIilgVOoq+onNBo/YQBG86sf3/GFHkN6lRJPm1l7dKN0IMAk57RQoIm4GUllRrasLlcaSg=="],
 
