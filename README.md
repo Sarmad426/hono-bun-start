@@ -38,3 +38,5 @@ bun dev
 ```
 
 This will run the `/api/basic-api.ts` file on port 3000. <http://localhost:3000>
+
+This project is using typescript. But there is no compilation step. Bun runs typescript files directly.
